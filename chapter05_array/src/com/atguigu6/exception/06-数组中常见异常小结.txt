@@ -1,0 +1,13 @@
+
+
+
+1. 数组的使用中常见的异常小结
+
+> 数组角标越界的异常：ArrayIndexOutOfBoundsException
+> 空指针的异常：NullPointerException
+
+2. 出现异常会怎样？如何处理？
+
+>程序终止
+>修改代码
+

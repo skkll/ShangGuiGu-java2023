@@ -1,0 +1,44 @@
+package com.atguigu06.polymorphism.exer4;
+
+import java.util.Objects;
+
+/**
+ * ClassName: Man
+ * Description:
+ *
+ * @Author 尚硅谷-宋红康
+ * @Create 9:25
+ * @Version 1.0
+ */
+public class Man extends Person{
+    private String name;
+
+    public void eat(){
+        System.out.println("男人大口的吃饭");
+    }
+
+    public void toilet(){
+        System.out.println("男人去男厕所");
+    }
+
+    public void smoke(){
+        System.out.println("厕后一支烟");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
+        Man man = (Man) o;
+        return Objects.equals(name, man.name);
+    }
+
+    @Override
+    public String toString() {
+        return "Man{" +
+                "name='" + name + '\'' +
+                '}';
+    }
+}
